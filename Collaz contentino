@@ -1,0 +1,10 @@
+def collatz(n):
+    while n > 1:
+        if n % 2 == 0:  # se n è pari
+            n = n // 2
+        else:           # se n è dispari
+            n = 3 * n + 1
+        print(n)        # stampa il valore di n ad ogni passo
+
+# Esempio di utilizzo
+collatz(10)
